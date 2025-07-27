@@ -1,0 +1,57 @@
+jobhive-landing/
+├── app/                          # App Router
+│   ├── globals.css
+│   ├── layout.tsx                # Root layout (your current file)
+│   ├── page.tsx                  # Single landing page
+│   └── favicon.ico
+├── components/                   # All UI components
+│   ├── ui/                      # Base UI components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   ├── badge.tsx
+│   │   └── separator.tsx
+│   ├── sections/                # Landing page sections (main content)
+│   │   ├── hero-section.tsx
+│   │   ├── features-section.tsx
+│   │   ├── how-it-works-section.tsx
+│   │   ├── stats-section.tsx
+│   │   ├── testimonials-section.tsx
+│   │   ├── job-categories-section.tsx
+│   │   ├── companies-section.tsx
+│   │   └── cta-section.tsx
+│   ├── forms/                   # Interactive forms
+│   │   ├── job-search-form.tsx
+│   │   ├── newsletter-signup.tsx
+│   │   └── contact-form.tsx
+│   └── common/                  # Reusable components
+│       ├── logo.tsx
+│       ├── social-links.tsx
+│       ├── job-card.tsx
+│       ├── company-card.tsx
+│       ├── feature-card.tsx
+│       └── testimonial-card.tsx
+├── lib/                         # Utilities
+│   ├── utils.ts                 # cn, clsx utilities
+│   ├── constants.ts             # App constants
+│   ├── types.ts                 # TypeScript types
+│   └── validations.ts           # Form validation
+├── hooks/                       # Custom hooks
+│   ├── use-local-storage.ts
+│   ├── use-media-query.ts
+│   └── use-scroll.ts
+├── data/                        # Static content
+│   ├── jobs.ts                  # Sample job data
+│   ├── companies.ts             # Featured companies
+│   ├── testimonials.ts          # Testimonials
+│   ├── features.ts              # Platform features
+│   ├── job-categories.ts        # Job categories
+│   └── stats.ts                 # Statistics
+├── public/                      # Static assets
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── companies/
+│   │   ├── features/
+│   │   └── testimonials/
+│   └── icons/
+└── config files...
