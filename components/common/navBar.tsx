@@ -140,8 +140,8 @@ const JobHiveNavbar = ({
     >
       <div
         className="
-        container
-        lg:flex lg:items-center lg:h-full lg:justify-between lg:w-[92%] lg:mx-auto lg:max-w-none
+        container px-4
+        lg:flex lg:items-center lg:h-full lg:justify-between lg:w-[92%] lg:mx-auto lg:max-w-none lg:px-0
       "
       >
         {/* Desktop Menu */}
