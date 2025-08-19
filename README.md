@@ -1,36 +1,196 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JobHive Landing Page
 
-## Getting Started
+A modern, responsive landing page for JobHive - a professional job search and recruitment platform. Built with Next.js 15, TypeScript, and enhanced with smooth motion animations.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### ✨ Modern Design
+
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
+- **Clean UI**: Professional design with shadcn/ui components
+- **Smooth Animations**: Fluid motion effects using Motion library
+- **Interactive Elements**: Hover effects and micro-interactions
+
+### 🎯 Landing Page Sections
+
+- **Hero Section**: Compelling headline with job search functionality
+- **Job Categories**: Interactive grid showcasing different job types
+- **Featured Jobs**: Carousel of top job opportunities from leading companies
+- **Trusted Companies**: Marquee display of partner organizations
+- **Post Job**: Call-to-action for employers to post positions
+- **Testimonials**: User reviews and success stories
+- **Ready to Start Banner**: Simple conversion-focused section
+
+### 🛠️ Technical Features
+
+- **Next.js 15**: Latest React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling with custom design system
+- **Motion Animations**: Smooth scroll-triggered animations
+- **Lottie Animations**: Engaging vector animations
+- **Image Optimization**: Next.js Image component for performance
+- **Company Icons**: Simple Icons integration for brand logos
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15.4.3
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI Components**: shadcn/ui (Radix UI primitives)
+- **Animations**: Motion (modern Framer Motion)
+- **Icons**: Lucide React & Simple Icons
+- **Lottie**: lottie-react for vector animations
+- **Carousel**: Embla Carousel
+- **Development**: ESLint, PostCSS
+
+## 📦 Dependencies
+
+### Core
+
+- `next` - React framework
+- `react` & `react-dom` - React library
+- `typescript` - Type checking
+
+### UI & Styling
+
+- `tailwindcss` - CSS framework
+- `@radix-ui/react-*` - Accessible UI primitives
+- `class-variance-authority` - Component variants
+- `clsx` & `tailwind-merge` - Utility functions
+
+### Animations & Interactions
+
+- `motion` - Modern animation library
+- `lottie-react` - Lottie animations
+- `embla-carousel-react` - Carousel component
+
+### Icons & Assets
+
+- `lucide-react` - Icon library
+- `simple-icons` - Brand icons
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Nikuruuu/JobHive.git
+   cd jobhive-landing
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+
+## 📁 Project Structure
+
+```
+jobhive-landing/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx          # Home page
+├── components/
+│   ├── common/           # Shared components
+│   │   ├── logo.tsx
+│   │   ├── navBar.tsx
+│   │   └── lottie-*.tsx  # Lottie animations
+│   ├── magicui/          # Enhanced UI components
+│   │   └── marquee.tsx
+│   ├── motion-primitives/ # Motion components
+│   │   └── tilt.tsx
+│   ├── sections/         # Landing page sections
+│   │   ├── hero-section.tsx
+│   │   ├── job-categories.tsx
+│   │   ├── featured-jobs.tsx
+│   │   ├── trusted-companies.tsx
+│   │   ├── post-job.tsx
+│   │   ├── testimonials.tsx
+│   │   └── readyFindJob.tsx
+│   └── ui/              # shadcn/ui components
+├── constant/            # Static data and configurations
+├── lib/                # Utility functions
+└── public/             # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Animation Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Scroll-triggered animations**: Elements animate as they come into view
+- **Staggered timing**: Sequential animations for lists and grids
+- **Hover interactions**: Subtle feedback on interactive elements
+- **Smooth transitions**: Professional easing curves throughout
+- **Performance optimized**: GPU-accelerated transforms
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Responsive Design
 
-## Learn More
+- **Mobile-first approach**: Optimized for all screen sizes
+- **Breakpoint system**: sm, md, lg, xl responsive breakpoints
+- **Touch-friendly**: Appropriate sizing for mobile interactions
+- **Performance**: Optimized images and efficient loading
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Vercel (Recommended)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with zero configuration
 
-## Deploy on Vercel
+### Other Platforms
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This Next.js application can be deployed to any platform that supports Node.js:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Netlify
+- Railway
+- DigitalOcean App Platform
+- AWS Amplify
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) - The React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components
+- [Motion](https://motion.dev/) - Animation library
+- [Lucide](https://lucide.dev/) - Beautiful icons
+
+---
+
+**Built with ❤️ for the job search community**
